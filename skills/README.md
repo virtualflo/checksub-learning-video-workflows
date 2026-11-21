@@ -8,7 +8,7 @@ Three portable skills for reviewing multilingual training-video handoffs, subtit
 | subtitle-delivery-preflight | Caption files, destination requirements and playback evidence |
 | training-video-update-impact | Source changes and affected locale assets |
 
-Each skill contains its instructions, a CSV output template and agent UI metadata. Open its SKILL.md and supply the relevant lesson, captions or change request. In Claude Code the plugin prefix is `/checksub-learning-video-workflows:`, followed by the skill name.
+Each skill contains its instructions, a CSV output template stored as `.txt` and agent UI metadata. Open its SKILL.md and supply the relevant lesson, captions or change request. In Claude Code the plugin prefix is `/checksub-learning-video-workflows:`, followed by the skill name.
 
 ## Repository installation
 
@@ -21,7 +21,7 @@ This directory also provides a self-contained source for the Anthropic directory
 
 ## Data handling
 
-The package contains text instructions and CSV templates. It includes no network client, telemetry collector or MCP connection. Your chosen AI host processes materials you supply under that host’s policies. Optional tools you choose can transfer data according to their configuration and permissions.
+The package contains text instructions and CSV templates stored as `.txt`. It includes no network client, telemetry collector or MCP connection. Your chosen AI host processes materials you supply under that host’s policies. Optional tools you choose can transfer data according to their configuration and permissions.
 
 ## Support and security
 

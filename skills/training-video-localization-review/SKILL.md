@@ -4,7 +4,7 @@ description: Review a training-video localization brief, terminology and locale 
 license: MIT
 metadata:
   author: Checksub
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 # Training video localization review
 
@@ -20,7 +20,7 @@ Map each locale to its subject-matter reviewer, linguistic reviewer and delivery
 
 ## Produce the handoff
 
-Give the user a short list of consequential ambiguities and the next practical action for each. Use [assets/locale-review.csv](assets/locale-review.csv) when a reusable tracking file helps. Add rows for source segments and locales that genuinely need review. Keep resolved information and unknowns distinct.
+Give the user a short list of consequential ambiguities and the next practical action for each. Use [the CSV text template](assets/locale-review.txt) when a reusable tracking file helps. Add rows for source segments and locales that genuinely need review. Keep resolved information and unknowns distinct.
 
 A useful handoff identifies the source evidence, proposed translation decision, affected locale, reviewer status and output artifact. Avoid marking a translation reviewed based only on fluent wording. If the source video is unavailable, explain which visual or timing questions require it.
 

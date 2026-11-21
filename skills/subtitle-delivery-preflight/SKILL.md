@@ -4,7 +4,7 @@ description: Review supplied SRT or WebVTT files against a named player or LMS d
 license: MIT
 metadata:
   author: Checksub
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 # Subtitle delivery preflight
 
@@ -24,7 +24,7 @@ Compare names, numbers, units and negation against the authoritative source when
 
 ## Report evidence
 
-Use [assets/delivery-findings.csv](assets/delivery-findings.csv) when a row-based report helps. Identify the file, locale, cue or timestamp, finding, evidence and next action. Separate file inspection from actual import and learner playback results. Record an unperformed import as untested. Record who tested playback and the actual device or environment when that evidence exists.
+Use [the CSV text template](assets/delivery-findings.txt) when a row-based report helps. Identify the file, locale, cue or timestamp, finding, evidence and next action. Separate file inspection from actual import and learner playback results. Record an unperformed import as untested. Record who tested playback and the actual device or environment when that evidence exists.
 
 Provide a concise delivery decision supported by the performed checks and remaining dependencies. Limit the conclusion to the checks and destination tests actually performed.
 

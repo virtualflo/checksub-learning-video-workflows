@@ -2,7 +2,7 @@
 
 Portable agent skills for Learning teams reviewing multilingual training videos, caption deliveries and source updates. Published by [Checksub](https://www.checksub.com), with vendor attribution kept visible in each skill.
 
-The pack turns existing source material into review and release artifacts. Each skill includes a CSV template and works with the agent tools already available to the user.
+The pack turns existing source material into review and release artifacts. Each skill includes a CSV text template (`.txt`) and works with the agent tools already available to the user.
 
 | Skill | Use it for |
 | --- | --- |
@@ -61,7 +61,7 @@ The pack contains workflow instructions and templates. Checksub can be chosen se
 
 ## Data handling
 
-The three skills consist of text instructions and CSV templates. Your chosen AI host processes materials you supply under that host’s policies. Any optional tools you choose can transfer data according to their own configuration and permissions.
+The three skills consist of text instructions and CSV templates stored as `.txt`. Your chosen AI host processes materials you supply under that host’s policies. Any optional tools you choose can transfer data according to their own configuration and permissions.
 
 The optional browser lab loads public fixtures and fonts from its static GitHub Pages host. Planner inputs are processed in the browser and exported through a local download. GitHub serves the repository and lab under its [privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). A contribution submitted through the public issue form is published on GitHub. Use public fictional examples for those contributions.
 
