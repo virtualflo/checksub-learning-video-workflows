@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this release when reusing the synthetic caption teaching cases."
+type: dataset
+title: "Checksub Learning Video Workflows and Synthetic Caption Review Cases"
+authors:
+  - name: "Checksub"
+version: 1.0.0
+date-released: 2026-11-21
+url: "https://github.com/virtualflo/checksub-learning-video-workflows"
+license: MIT
+abstract: "Eight original synthetic subtitle teaching cases, portable agent workflows and a training-video update planner. Expected review outcomes are based on supplied fictional source context."

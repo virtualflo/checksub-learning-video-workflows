@@ -10,9 +10,15 @@ The pack turns existing source material into review and release artifacts. Each 
 | subtitle-delivery-preflight | Caption files, destination requirements and playback evidence |
 | training-video-update-impact | Script changes and the locale assets they affect |
 
+## Explore the public lab
+
+[Open the Learning Video Handoff Lab](https://virtualflo.github.io/checksub-learning-video-workflows/) to review eight synthetic caption cases and build a training-video update checklist. The lab works in the browser without an account or file upload. Its original fictional cases were prepared with AI assistance.
+
+Download the [candidate and reviewed examples](fixtures/README.md), reuse the [case manifest](fixtures/manifest.json), or [propose an original public teaching case](https://github.com/virtualflo/checksub-learning-video-workflows/issues/new/choose) through the community clinic.
+
 ## Install
 
-After this repository is public, use the [skills CLI](https://github.com/vercel-labs/skills) from your project. The CLI supports a choice of skills and agents. Its current documented minimum is Node.js 22.20.
+Use the [skills CLI](https://github.com/vercel-labs/skills) from your project. The CLI supports a choice of skills and agents. Its current documented minimum is Node.js 22.20.
 
 ```sh
 npx skills add virtualflo/checksub-learning-video-workflows

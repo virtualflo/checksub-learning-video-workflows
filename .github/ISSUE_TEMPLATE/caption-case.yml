@@ -1,0 +1,39 @@
+name: Propose a caption review case
+description: Share an original public teaching case for the Checksub learning-video clinic.
+title: "[Caption case] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public educational issue tracker maintained by Checksub. Use a short fictional example or material you have permission to publish. Review suggestions describe this sample and its stated delivery requirements.
+  - type: checkboxes
+    id: public-rights
+    attributes:
+      label: Publication rights
+      options:
+        - label: I created this fictional example or have permission to publish it here, including its source text.
+          required: true
+        - label: I have removed access credentials and private personal or company information.
+          required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source and intended meaning
+      description: Include the short source sentence, target language and the relevant delivery constraint.
+    validations:
+      required: true
+  - type: textarea
+    id: captions
+    attributes:
+      label: Subtitle sample
+      description: Paste a short SRT or WebVTT excerpt.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: review
+    attributes:
+      label: What needs review?
+      description: Explain the suspected issue and the destination player or LMS, if relevant.
+    validations:
+      required: true

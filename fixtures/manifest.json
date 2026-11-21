@@ -1,0 +1,98 @@
+{
+  "version": "2026-11-21",
+  "publisher": "Checksub",
+  "license": "MIT",
+  "provenance": "Original synthetic teaching cases prepared with AI assistance. No customer media or product-output benchmark is included. Expected outcomes use the supplied fictional source and the cited specifications.",
+  "sources": [
+    {
+      "title": "WebVTT W3C Candidate Recommendation Draft, 20 May 2026",
+      "url": "https://www.w3.org/TR/2026/CRD-webvtt1-20260520/"
+    },
+    {
+      "title": "SubRip format description, Library of Congress",
+      "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000569.shtml"
+    }
+  ],
+  "cases": [
+    {
+      "id": "end-before-start",
+      "title": "A cue ends before it starts",
+      "kind": "SRT",
+      "source": "Fictional onboarding. The words should appear from second 2 to second 5.",
+      "broken": "1\n00:00:05,000 --> 00:00:02,000\nWelcome to the team.\n",
+      "corrected": "1\n00:00:02,000 --> 00:00:05,000\nWelcome to the team.\n",
+      "explanation": "The end timestamp precedes the start. The corrected interval follows the stated fictional timing. Real timing requires checking the media.",
+      "review": "code"
+    },
+    {
+      "id": "missing-vtt-header",
+      "title": "The WebVTT header disappeared",
+      "kind": "VTT",
+      "source": "A standalone WebVTT caption file, intended for a player that accepts WebVTT.",
+      "broken": "00:00.000 --> 00:03.000\nWelcome to the team.\n",
+      "corrected": "WEBVTT\n\n00:00.000 --> 00:03.000\nWelcome to the team.\n",
+      "explanation": "A standalone WebVTT file starts with the WEBVTT signature. This repair addresses the missing signature and does not verify player-specific support.",
+      "review": "code"
+    },
+    {
+      "id": "overlap-review",
+      "title": "Two speakers overlap",
+      "kind": "SRT",
+      "source": "Two fictional speakers talk at once between seconds 2 and 3. Preserve the simultaneous dialogue.",
+      "broken": "1\n00:00:01,000 --> 00:00:03,000\nALEX: Can I ask a question?\n\n2\n00:00:02,000 --> 00:00:04,000\nSAM: Yes, go ahead.\n",
+      "corrected": "1\n00:00:01,000 --> 00:00:02,000\nALEX: Can I ask a question?\n\n2\n00:00:02,000 --> 00:00:03,000\nALEX: Can I ask a question?\nSAM: Yes, go ahead.\n\n3\n00:00:03,000 --> 00:00:04,000\nSAM: Yes, go ahead.\n",
+      "explanation": "Overlapping cues can represent simultaneous speech. Treat an overlap warning as a review request. This two-line alternative illustrates a delivery choice and needs player and media review.",
+      "review": "editorial"
+    },
+    {
+      "id": "reading-speed",
+      "title": "A sentence flashes past",
+      "kind": "SRT",
+      "source": "The fictional speaker has six seconds for this sentence. For this exercise, the review threshold is 20 visible characters per second.",
+      "broken": "1\n00:00:00,000 --> 00:00:01,000\nOpen the learning portal and choose your onboarding course.\n",
+      "corrected": "1\n00:00:00,000 --> 00:00:06,000\nOpen the learning portal\nand choose your onboarding course.\n",
+      "explanation": "The original cue exceeds the exercise reading-speed threshold. The threshold is an editorial assumption, not a universal format rule. The longer interval is valid only because this fictional source explicitly allows it.",
+      "review": "editorial"
+    },
+    {
+      "id": "lost-negation",
+      "title": "Translation reverses the instruction",
+      "kind": "SRT",
+      "source": "English source: Do not share your access code. Required meaning in French must preserve the prohibition.",
+      "broken": "1\n00:00:00,000 --> 00:00:04,000\nPartagez votre code d’accès.\n",
+      "corrected": "1\n00:00:00,000 --> 00:00:04,000\nNe partagez pas votre code d’accès.\n",
+      "explanation": "Both files are structurally plausible. The first translation reverses the instruction. A source-aware language review is needed to catch the missing negation.",
+      "review": "human"
+    },
+    {
+      "id": "changed-number",
+      "title": "A number changes across languages",
+      "kind": "SRT",
+      "source": "English source: Your fictional demo invitation expires after 48 hours.",
+      "broken": "1\n00:00:00,000 --> 00:00:04,000\nVotre invitation expire après 24 heures.\n",
+      "corrected": "1\n00:00:00,000 --> 00:00:04,000\nVotre invitation expire après 48 heures.\n",
+      "explanation": "The target-language number disagrees with the supplied source. Timing checks cannot establish translation accuracy.",
+      "review": "human"
+    },
+    {
+      "id": "term-consistency",
+      "title": "The same control gets two names",
+      "kind": "SRT",
+      "source": "Fictional product glossary: the UI label Learning hub must remain Learning hub in this French demonstration.",
+      "broken": "1\n00:00:00,000 --> 00:00:03,000\nOuvrez le Learning hub.\n\n2\n00:00:03,000 --> 00:00:06,000\nRetrouvez le cours dans le centre pédagogique.\n",
+      "corrected": "1\n00:00:00,000 --> 00:00:03,000\nOuvrez le Learning hub.\n\n2\n00:00:03,000 --> 00:00:06,000\nRetrouvez le cours dans le Learning hub.\n",
+      "explanation": "The supplied fictional glossary establishes the preferred UI label. Terminology review uses that source-specific decision. It does not make the alternative phrase wrong in every context.",
+      "review": "human"
+    },
+    {
+      "id": "empty-cue",
+      "title": "An empty cue survives export",
+      "kind": "SRT",
+      "source": "Fictional source has one spoken sentence from second 3 to second 6. No text is expected before it.",
+      "broken": "1\n00:00:00,000 --> 00:00:02,000\n\n2\n00:00:03,000 --> 00:00:06,000\nChoose your first course.\n",
+      "corrected": "1\n00:00:03,000 --> 00:00:06,000\nChoose your first course.\n",
+      "explanation": "Remove the empty cue and renumber the remaining cue for the intended SRT delivery. This exercise contains no visual or sound-description requirement for the empty interval.",
+      "review": "code"
+    }
+  ]
+}
