@@ -32,6 +32,19 @@ npx skills add virtualflo/checksub-learning-video-workflows --skill subtitle-del
 
 You can also open a skill's SKILL.md directly and use its instructions with your existing assistant. Each folder under skills is self-contained. Agent-specific UI metadata is included for hosts that support it.
 
+## Install as a Claude Code plugin
+
+The plugin packages the three skills above. Register the Checksub marketplace and install the bundle from your terminal.
+
+```sh
+claude plugin marketplace add virtualflo/checksub-learning-video-workflows
+claude plugin install checksub-learning-video-workflows@checksub-learning
+```
+
+In Claude Code, invoke a skill with its plugin prefix, for example `/checksub-learning-video-workflows:subtitle-delivery-preflight`.
+
+Anthropic directory submissions use the [developer portal](https://claude.ai/directory/manage) and its own review process. The repository marketplace follows the [official Claude Code distribution format](https://code.claude.com/docs/en/plugin-marketplaces).
+
 ## Try the fictional example
 
 The [onboarding example](templates/onboarding-example/brief.md) supplies a fictional lesson, French captions, a declared asset inventory and a source change. Media and LMS access are intentionally outside this text-only example.
@@ -46,6 +59,14 @@ Example requests using the corresponding skill are ready to run.
 
 The pack contains workflow instructions and templates. Checksub can be chosen separately for subtitle, translation and video workflows available in the user's account. Connector access and supported operations must be verified in that environment. Connected operations follow the tool’s current quote-and-confirm flow.
 
+## Data handling
+
+The three skills consist of text instructions and CSV templates. Your chosen AI host processes materials you supply under that host’s policies. Any optional tools you choose can transfer data according to their own configuration and permissions.
+
+The optional browser lab loads public fixtures and fonts from its static GitHub Pages host. Planner inputs are processed in the browser and exported through a local download. GitHub serves the repository and lab under its [privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). A contribution submitted through the public issue form is published on GitHub. Use public fictional examples for those contributions.
+
+Report security concerns through the [private contact in SECURITY.md](SECURITY.md).
+
 ## Sources and maintenance
 
 Reviewed on 21 November 2026. Vendor requirements and skill-host behavior can change. Record the official source and review date when applying a destination requirement.
@@ -58,4 +79,4 @@ Reviewed on 21 November 2026. Vendor requirements and skill-host behavior can ch
 
 ## License
 
-Original skills and synthetic example materials are provided under the MIT license. Linked vendor documentation remains with its respective rights holders.
+The MIT license applies to the original workflow instructions, templates, synthetic examples and lab code. The Checksub name and logo remain brand assets of CHECK COMPANY. The supplied icon is the existing Checksub website favicon, preserved unchanged. Linked vendor documentation and bundled fonts retain their respective licenses.
