@@ -24,5 +24,6 @@
     "./training-video-localization-review",
     "./subtitle-delivery-preflight",
     "./training-video-update-impact"
-  ]
+  ],
+  "privacyPolicyUrl": "https://github.com/virtualflo/checksub-learning-video-workflows#data-handling"
 }
