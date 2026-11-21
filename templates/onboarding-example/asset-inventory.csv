@@ -1,0 +1,6 @@
+artifact,locale,version,source_version,evidence,review_status
+source-video.mp4,en,1.0,1.0,"Declared inventory only, media not supplied",approved source script
+fr-FR-draft.srt,fr-FR,draft-1,1.0,Caption file supplied,unreviewed
+french-dub.wav,fr-FR,draft-1,1.0,"Declared inventory only, audio not supplied",unreviewed
+access-instruction.png,fr-FR,draft-1,1.0,"Declared inventory only, screen image not supplied",unreviewed
+canvas-lesson-fr,fr-FR,unknown,1.0,"Declared activity only, LMS not accessed",import untested

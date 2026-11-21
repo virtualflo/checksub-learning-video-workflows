@@ -1,0 +1,4 @@
+interface:
+  display_name: "Training video localization review"
+  short_description: "Review terminology and locale delivery plans"
+  default_prompt: "Use $training-video-localization-review to review this training-video localization brief and propose a delivery plan."

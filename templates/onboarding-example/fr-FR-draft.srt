@@ -1,0 +1,18 @@
+1
+00:00:00,000 --> 00:00:04,000
+Bienvenue chez Northstar Workshop.
+
+2
+00:00:04,000 --> 00:00:09,000
+Sélectionnez Request access
+pour demander votre compte.
+
+3
+00:00:09,000 --> 00:00:14,000
+Votre accès temporaire expire
+après quatorze jours.
+
+4
+00:00:14,000 --> 00:00:20,000
+Contactez le service d'assistance
+si vous n'avez pas reçu votre accès.

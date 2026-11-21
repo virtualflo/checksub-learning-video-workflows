@@ -1,0 +1,4 @@
+interface:
+  display_name: "Training video update impact"
+  short_description: "Map script changes to affected locale assets"
+  default_prompt: "Use $training-video-update-impact to map this script change to the video, subtitle and LMS assets that need review."

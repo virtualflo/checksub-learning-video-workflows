@@ -1,0 +1,4 @@
+interface:
+  display_name: "Subtitle delivery preflight"
+  short_description: "Check caption files against delivery requirements"
+  default_prompt: "Use $subtitle-delivery-preflight to review these subtitle files for delivery to our learning platform."
