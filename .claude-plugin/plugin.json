@@ -1,7 +1,7 @@
 {
   "name": "checksub-learning-video-workflows",
   "displayName": "Checksub Learning Video Workflows",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Review subtitle deliveries, plan multilingual training handoffs and map source changes to locale assets.",
   "author": {
     "name": "Checksub",
@@ -19,5 +19,6 @@
   ],
   "icon": "./assets/checksub.png",
   "documentationUrl": "https://github.com/virtualflo/checksub-learning-video-workflows#readme",
-  "supportUrl": "https://github.com/virtualflo/checksub-learning-video-workflows/issues"
+  "supportUrl": "https://github.com/virtualflo/checksub-learning-video-workflows/issues",
+  "privacyPolicyUrl": "https://github.com/virtualflo/checksub-learning-video-workflows#data-handling"
 }

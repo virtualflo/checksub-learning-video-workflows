@@ -4,7 +4,7 @@ description: Compare training-script or policy revisions and map each meaningful
 license: MIT
 metadata:
   author: Checksub
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 # Training video update impact
 
@@ -20,7 +20,7 @@ Match each change to the available segment IDs, timecodes, on-screen text and lo
 
 For each affected locale, identify the caption, narration, screen capture or packaging work justified by the change. Changing spoken audio can invalidate timing even when translated wording is unchanged. A policy change can require review of a translation whose grammar remains fluent.
 
-Use [assets/update-impact.csv](assets/update-impact.csv) to map the old/new source evidence to the artifact, proposed action, dependency and known review state. Include apparently reusable assets when the evidence justifies reuse, with the reason recorded. Avoid treating a filename as proof that a release has been replaced in the LMS.
+Use [the CSV text template](assets/update-impact.txt) to map the old/new source evidence to the artifact, proposed action, dependency and known review state. Include apparently reusable assets when the evidence justifies reuse, with the reason recorded. Avoid treating a filename as proof that a release has been replaced in the LMS.
 
 ## Prepare release evidence
 
