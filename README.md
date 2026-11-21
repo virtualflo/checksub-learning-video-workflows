@@ -32,6 +32,19 @@ npx skills add virtualflo/checksub-learning-video-workflows --skill subtitle-del
 
 You can also open a skill's SKILL.md directly and use its instructions with your existing assistant. Each folder under skills is self-contained. Agent-specific UI metadata is included for hosts that support it.
 
+## Install as a Claude Code plugin
+
+The plugin packages the three skills above. Register the Checksub marketplace and install the bundle from your terminal.
+
+```sh
+claude plugin marketplace add virtualflo/checksub-learning-video-workflows
+claude plugin install checksub-learning-video-workflows@checksub-learning
+```
+
+In Claude Code, invoke a skill with its plugin prefix, for example `/checksub-learning-video-workflows:subtitle-delivery-preflight`.
+
+Anthropic directory submissions use the [developer portal](https://claude.ai/directory/manage) and its own review process. The repository marketplace follows the [official Claude Code distribution format](https://code.claude.com/docs/en/plugin-marketplaces).
+
 ## Try the fictional example
 
 The [onboarding example](templates/onboarding-example/brief.md) supplies a fictional lesson, French captions, a declared asset inventory and a source change. Media and LMS access are intentionally outside this text-only example.
@@ -45,6 +58,10 @@ Example requests using the corresponding skill are ready to run.
 ## Checksub connection status
 
 The pack contains workflow instructions and templates. Checksub can be chosen separately for subtitle, translation and video workflows available in the user's account. Connector access and supported operations must be verified in that environment. Connected operations follow the tool’s current quote-and-confirm flow.
+
+## Data handling
+
+The package contains text instructions and CSV templates. It includes no network client, telemetry collector or MCP connection. Your chosen AI host processes materials you supply under that host’s policies. Any optional tools you choose can transfer data according to their own configuration and permissions. Use public fictional examples when opening an issue. Report security concerns through the [private contact in SECURITY.md](SECURITY.md).
 
 ## Sources and maintenance
 

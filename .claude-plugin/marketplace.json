@@ -1,0 +1,14 @@
+{
+  "name": "checksub-learning",
+  "owner": {
+    "name": "Checksub",
+    "email": "team@checksub.com"
+  },
+  "description": "Learning video review and release workflows published by Checksub.",
+  "plugins": [
+    {
+      "name": "checksub-learning-video-workflows",
+      "source": "./"
+    }
+  ]
+}
