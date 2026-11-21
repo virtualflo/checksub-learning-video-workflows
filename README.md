@@ -61,7 +61,11 @@ The pack contains workflow instructions and templates. Checksub can be chosen se
 
 ## Data handling
 
-The package contains text instructions and CSV templates. It includes no network client, telemetry collector or MCP connection. Your chosen AI host processes materials you supply under that host’s policies. Any optional tools you choose can transfer data according to their own configuration and permissions. Use public fictional examples when opening an issue. Report security concerns through the [private contact in SECURITY.md](SECURITY.md).
+The three skills consist of text instructions and CSV templates. Your chosen AI host processes materials you supply under that host’s policies. Any optional tools you choose can transfer data according to their own configuration and permissions.
+
+The optional browser lab loads public fixtures and fonts from its static GitHub Pages host. Planner inputs are processed in the browser and exported through a local download. GitHub serves the repository and lab under its [privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). A contribution submitted through the public issue form is published on GitHub. Use public fictional examples for those contributions.
+
+Report security concerns through the [private contact in SECURITY.md](SECURITY.md).
 
 ## Sources and maintenance
 
@@ -75,4 +79,4 @@ Reviewed on 21 November 2026. Vendor requirements and skill-host behavior can ch
 
 ## License
 
-Original skills and synthetic example materials are provided under the MIT license. Linked vendor documentation remains with its respective rights holders.
+The MIT license applies to the original workflow instructions, templates, synthetic examples and lab code. The Checksub name and logo remain brand assets of CHECK COMPANY. The supplied icon is the existing Checksub website favicon, preserved unchanged. Linked vendor documentation and bundled fonts retain their respective licenses.
