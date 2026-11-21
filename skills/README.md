@@ -29,4 +29,4 @@ Use [repository issues](https://github.com/virtualflo/checksub-learning-video-wo
 
 ## License
 
-Original skill materials are provided under the bundled MIT license. Linked vendor documentation retains its own rights.
+Original skill materials are provided under the bundled MIT license. The Checksub name and logo remain brand assets of CHECK COMPANY. The supplied icon is the existing Checksub website favicon, preserved unchanged. Linked vendor documentation retains its own rights.
